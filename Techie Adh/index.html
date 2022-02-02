@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="logo.jpg" type="image/icon type">
+  <title>Techie Adh</title>
+  <style>
+    /* Style for the home page of the website. */
+    body {
+      background: url(bg.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0px;
+      padding: 0px;
+      
+    }
+    
+    .menu {
+            width: 100%;
+            height: 70px;
+            background-color: black;
+            opacity: .6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 9;
+        }
+
+        .menu ul {
+
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .menu ul li {
+            display: inline-block;
+            list-syle: none;
+            width: 120px;
+            height: 100%;
+
+            text-align: center;
+            line-height: 70px;
+            margin-right: 50px;
+
+
+        }
+
+        .menu ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        h2 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu ul li a:hover {
+            background-color: red;
+            color: black;
+            display: block;
+            transition: 0.4s;
+            opacity: none;
+        }
+    .home {
+      height: 60vh;
+
+    }
+
+    .headings {
+      position: absolute;
+      top: 35%;
+      left: 45%;
+      transform: translate(-35%, -45%);
+      background-attachment: fixed;
+
+
+    }
+
+    .headings h1 {
+      font-size: 90px;
+      font-weight: bold;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      background-attachment: fixed;
+    }
+
+    .headings p {
+      font-size: 40px;
+      font-weight: bold;
+      margin-top: 0;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      background-attachment: fixed;
+    }
+
+    .headings a {
+      width: 90px;
+      height: 25px;
+      border: 2px solid blue;
+      padding: 24px;
+      font-size: 29px;
+      font-weight: bold;
+      color: white;
+      background-color: blue;
+      border-radius: 20%;
+      text-decoration: none;
+      font-family: 'Be Vietnam Pro', sans-serif;
+    }
+
+    /* Style for the Blog page of the website. */
+    #blog {
+      height: 210vh;
+      background-color:steelblue;
+    }
+
+    .blog-head {
+      width: 100%;
+      height: 100px;
+      font-family: 'The Nautigal', cursive;
+      background-color: bisque;
+      font-size: 60px;
+      text-align: center;
+      line-height: 100px;
+      font-weight: weight;
+    }
+
+    .main-blog-text {
+      font-weight:bold;
+      font-size:30px;
+      text-align: center;
+      font-family: 'Saira Condensed', sans-serif;
+    }
+    .main-blog-text a{
+      text-decoration: none;
+      color:gainsboro;
+
+    }
+    .posts{
+      width:1150px;
+height:550px;
+background-color:darkslateblue;
+
+
+    }
+    .article-1{
+      width:350px;
+      height:450px;
+      border:1px solid white;
+      box-shadow: white;
+      margin-left:80px;
+      background-color: white;
+      float:left;
+      box-shadow: 5px 5px 5px 5px #fff;
+     
+    }
+    .article-1 img{
+      width:350px;
+      height:250px;
+      padding:4px;
+    }
+    .article-2{
+      width:350px;
+      height:450px;
+      border:1px solid white;
+      box-shadow: white;
+      margin-left:105px;
+      background-color: white;
+      float:left;
+      box-shadow: 5px 5px 5px 5px #fff;
+    }
+    .article-2 img{
+      width:350px;
+      height:250px;
+      padding:4px;
+    }
+    .article-3{
+      width:350px;
+      height:450px;
+      border:1px solid white;
+      box-shadow: white;
+      margin-left:80px;
+      background-color: white;
+      float:right;
+      margin-right: 90px;;
+      box-shadow: 5px 5px 5px 5px #fff;
+    }
+    .article-3 img{
+      width:350px;
+      height:250px;
+      padding:4px;
+    }
+    .posts-1{
+      width:1150px;
+height:550px;
+background-color:darkslateblue;
+
+
+
+    }
+    .article-1-1{
+      width:350px;
+      height:450px;
+      border:1px solid white;
+      box-shadow: white;
+      margin-left:80px;
+      background-color: white;
+      float:left;
+      box-shadow: 5px 5px 5px 5px #fff;
+     
+    }
+    .article-1-1 img{
+      width:350px;
+      height:250px;
+      padding:4px;
+    }
+
+    .article-2-2{
+      width:350px;
+      height:450px;
+      border:1px solid white;
+      box-shadow: white;
+      margin-left:105px;
+      background-color: white;
+      float:left;
+      box-shadow: 5px 5px 5px 5px #fff;
+    }
+    .article-2-2 img{
+      width:350px;
+      height:250px;
+      padding:4px;
+    }
+
+    .article-3-3{
+      width:350px;
+      height:450px;
+      border:1px solid white;
+      box-shadow: white;
+      margin-left:80px;
+      background-color: white;
+      float:right;
+      margin-right: 90px;;
+      box-shadow: 5px 5px 5px 5px #fff;
+    }
+    .article-3-3 img{
+      width:350px;
+      height:250px;
+      padding:4px;
+    }
+
+    
+    .post-head{
+      text-align: center;
+      color:blue;
+      font-weight:bold;
+      font-family: 'Be Vietnam Pro', sans-serif;
+    }
+    .head-1{
+      width:100%;
+      height:50px;
+      background-color: red;
+      line-height:50px;
+      text-align: center;
+      font-family: 'The Nautigal', cursive;
+      font-size:60px;
+      font-weight: bold;
+    }
+    .hide-{
+     background-color:steelblue;
+     padding:0;
+     color:steelblue;
+    }
+    .hide{
+      height:60px;
+      background-color: red;
+      font-family: 'The Nautigal', cursive;
+      font-size: 60px;
+      text-align: center;
+      line-height: 60px;
+    }
+    .fa-bars{
+      font-size:30px;
+      color:black;
+    }
+    #check{
+      display:none;
+    }
+    .toggle{
+      position:absolute;
+      top:35%;
+      right:1rem;
+      transition:translate(0,-50%);
+      color:white;
+      font-size:30px;
+     display:none;
+    
+    }
+    @media screen and (max-width:991px) 
+    {
+     header{
+        display:block;
+        background-color:thistle;
+      
+      }
+     .navbar ul{
+      display:block;
+      float:none;
+       
+      }
+      .menu ul li{
+        display:block;
+        
+        
+      }
+      .toggle{
+        display:block;
+      }
+      #check:checked ~ .menu {
+        left:0;
+        position: relative;
+      } */
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- It is Home Page of website. -->
+  <div class="home">
+  <div class="menu">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#blog">Blogs</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+    <div class="headings">
+      <h1>Techie Adh</h1>
+      <p>Tech Support in Nepali Language.</p>
+      </h1>
+      <h3><a href="#blog">Explore..</a></h3>
+    </div>
+  </div>>
+</div>
+  <!-- It is the Blog page of the website. -->
+
+  <div id="blog" name="blog">
+    <div class="blog-head">
+      <ul>Blogs</ul>
+    </div>
+    <div class="main-blog-text">Hello guys, Welcome to the Blog Section of our website. Here you can
+      find some articles which are related to the videos of my Youtube channel. For more information about
+      my channel you can visit my channel and do subscribe as well.
+      <br>
+      <a href="https://www.youtube.com./c/TechieAdh" target="_blank">(Click here to visit my channel)</a>
+    </div>
+    <h1 class="head-1"> Some blogs related to my latest Videos</h1>
+<br><br>
+
+<div clas="posts">
+  <div class="article-1">
+    <img src="article-1.jpg">
+    <h2 class="post-head">How to get non-copyright clips for YouTube videos?</h2>
+    <h3>Hello guys, In this video I had given you complete tutorial on kinemaster video editing. Make sure to watch the full video and give...<br>
+      <a href="article-1.html">read more...</a></h3>
+  </div>
+  
+  <div class="article-2">
+    <img src="article-2.jpg">
+    <h2 class="post-head">Kinemaster complete video editing tutorial!</h2>
+    <h3>Hello guys, In this video I had given you complete tutorial on kinemaster video editing. Make sure to watch the full video and give...<br>
+      <a href="article-2.html">read more...</a></h3>
+  </div>
+  
+  <div class="article-3">
+    <img src="article-3.jpg">
+    <h2 class="post-head">5 best applications for video editing n android!</h2>
+    <h3>Hello guys, In this video I had given you complete tutorial on kinemaster video editing. Make sure to watch the full video and give...<br>
+      <a href="article-3.html">read more...</a></h3>
+  </div>
+      </div>
+    
+   
+
+
+
+    <br><br><br>
+  <h1 class="hide-">...................</h1>
+  <h1 class="hide">Some blogs related to my previous videos.</h1>
+  <br><br>
+  
+
+
+    <div clas="posts-1">
+      <div class="article-1-1">
+        <img src="article-1-1.jpg">
+        <h2 class="post-head">How to hide subscribers on YouTube?</h2>
+        <h3>Hello guys, In this video I had given you complete tutorial on kinemaster video editing. Make sure to watch the full video and give...<br>
+          <a href="article-1-1.html">read more...</a></h3>
+      </div>
+      
+      <div class="article-2-2">
+        <img src="article-2-2.jpg">
+        <h2 class="post-head">How to add chapters to YouTube videos?</h2>
+        <h3>Hello guys, In this video I had given you complete tutorial on kinemaster video editing. Make sure to watch the full video and give...<br>
+          <a href="article-2-2.html">read more...</a></h3>
+      </div>
+      
+      <div class="article-3-3">
+        <img src="article-3-3.jpg">
+        <h2 class="post-head">5 best websites every users should know!</h2>
+        <h3>Hello guys, In this video I had given you complete tutorial on kinemaster video editing. Make sure to watch the full video and give...<br>
+          <a href="article-3-3.html">read more...</a></h3>
+      </div>
+      
+          </div>
+
+      
+
+        </div>
+</body>
+
+</html>
